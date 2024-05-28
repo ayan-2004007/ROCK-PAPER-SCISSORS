@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK|PAPER|SCISSORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main w-screen h-screen bg-[#100F25] flex flex-col items-center py-12 justify-between">
+        <div class="hero border-2 border-white w-fit px-40 py-10 absolute">
+            <span id="userPoint" class="text-white font-bold text-5xl ml-3"></span><span
+                class="text-white font-bold text-5xl ml-3">:</span><span id="compPoint"
+                class="text-white font-bold text-5xl ml-3"></span>
+        </div>
+        <div class="vs flex gap-64 relative top-10 md:flex-col">
+            <div
+                class="user text-white text-2xl font-['Exo 2'] font-bold bg-[#F94113] w-[200px] rounded-md py-3 text-center">
+                YOU</div>
+            <div
+                class="computer text-white text-2xl font-['Exo 2'] font-bold bg-[#F94113] w-[200px] rounded-md py-3 text-center">
+                COMPUTER</div>
+        </div>
+        <button id="start"
+            class="start bg-[#00963C] text-4xl text-white font-['Exo 2'] font-bold px-10 py-5 rounded-xl hover:bg-[#266a38] mb-60">START
+            A NEW GAME</button>
+        <div class="input flex-col items-center gap-36 mb-10 hidden">
+            <div class="flex gap-10 items-center">
+                <h1 id="display" class="text-white font-semibold text-5xl font-poppins">MAKE YOUR MOVE </h1>
+            </div>
+            <div class="GameIcons flex items-center gap-36">
+                <button id="rock"
+                    class="rounded-full overflow-hidden border-[5px] border-[#B4B2CD] hover:scale-110 transition-transform duration-300"><img
+                        src="../Assets/ROCK.png" alt="" class="h-[200px] w-[200px]"></button>
+                <button id="paper"
+                    class="rounded-full overflow-hidden border-[5px] border-[#B4B2CD] hover:scale-110 transition-transform duration-300"><img
+                        src="../Assets/PAPER.png" alt="" class="h-[200px] w-[200px]"></button>
+                <button id="scissor"
+                    class="rounded-full overflow-hidden border-[5px] border-[#B4B2CD] hover:scale-110 transition-transform duration-300"><img
+                        src="../Assets/SCISSOR.png" alt="" class="h-[200px] w-[200px]"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
